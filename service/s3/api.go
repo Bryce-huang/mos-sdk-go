@@ -26206,6 +26206,8 @@ type Object struct {
 
 	// The class of storage used to store the object.
 	StorageClass *string `type:"string" enum:"ObjectStorageClass"`
+
+	TagSet []*Tag `locationNameList:"Tag" type:"list" required:"true"`
 }
 
 // String returns the string representation
